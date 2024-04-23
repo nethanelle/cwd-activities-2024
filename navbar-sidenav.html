@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/3b049590d9.js" crossorigin="anonymous"></script>
+     <!-- font awesome cdnjs -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="style.css">
+    <title>Navbar & Sidenav</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="teal lighten-2">
+            <div class="container">
+            <div class="nav-wrapper">
+                <a href="https://www.biblestudytools.com/bible-stories/crucifixion-of-jesus-bible-story.html" target="_blank">
+                    <i class="fa-brands fa-square-x-twitter center brand-logo black-text"></i>
+            </a>
+            <a href="" class="sidenav-trigger" data-target="mobile-demo">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+           
+            <ul id="nav-mobile" class="center hide-on-med-and-down">
+                <li class="active">
+                    <a href="https://cdnjs.com/libraries/font-awesome" target="_blank" class="black-text">Kits</a>
+                </li>
+                <li>
+                    <a href="https://fontawesome.com/icons" target="_blank" class="black-text">Icons</a>
+                </li>
+                <li>
+                    <a href="https://docs.fontawesome.com/" target="_blank" class="black-text">Docs</a>
+                </li>
+                <li>
+                    <a href="" class="dropdown-trigger" data-target="dropdown1">
+                        <i class="material-icons">arrow_drop_down</i>
+                    </a>
+                </li>
+    
+                </ul>
+            </div>
+       </nav>
+    </div>
+    <ul id="dropdown1" class="dropdown-content">
+        <li>
+            <a href="#!">One</a>
+        </li>
+        <li>
+            <a href="#!">Two</a>
+        </li>
+        <li>
+           <div class="divider"></div> 
+        </li>
+        <li>
+            <a href="#!">Three</a>
+        </li>
+    </ul>
+    <br>
+    <h1 class="center red-text text-lighten-2">Navbar</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <br>
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.
+      </p>
+
+      <h3 class="red-text text-lighten-2">Right Aligned Links</h3>
+      <ul>To right align your navbar links, just add a right class to your <'ul'> that contains them.
+      </p>
+
+   <nav class="purple lighten-2">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="https://www.youtube.com/watch?v=hnMevXQutyE&list=RDhnMevXQutyE&start_radio=1" target="_blank">
+            <i class="fa-brands fa-youtube brand-logo black-text"></i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                <a href="https://cdnjs.com/libraries/font-awesome" target="_blank" class="black-text">Kits</a>
+            </li>
+            <li>
+                <a href="https://fontawesome.com/icons" target="_blank" class="black-text">Icons</a>
+            </li>
+            <li>
+                <a href="https://docs.fontawesome.com/" target="_blank" class="black-text">Docs</a>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+   </nav>
+   <br><br>
+
+   <h3 class="red-text text-lighten-2">Left Aligned Links</h3>
+   <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.
+   </p>
+   <nav class="grey">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="https://www.biblestudytools.com/bible-stories/crucifixion-of-jesus-bible-story.html" target="_blank">
+       <i class="fa-solid fa-cross brand-logo black-text">
+
+       </i>
+    </a>
+       
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li>
+                <a href="https://cdnjs.com/libraries/font-awesome" target="_blank" class="black-text">Kits</a>
+            </li>
+            <li>
+                <a href="https://fontawesome.com/icons" target="_blank" class="black-text">Icons</a>
+            </li>
+            <li>
+                <a href="https://docs.fontawesome.com/" target="_blank" class="black-text">Docs</a>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+   </nav>
+   <br><br>
+
+   <h3 class="red-text text-lighten-2">Center Aligned Links</h3>
+   <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo"'>. You will have to make sure yourself that links do not overlap if you use this.
+   </p>
+   <nav class="pink lighten-2">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="https://www.biblestudytools.com/bible-stories/crucifixion-of-jesus-bible-story.html" target="_blank">
+            <i class="fa-brands fa-square-web-awesome center brand-logo black-text"></i>
+    </a>
+       
+        <ul id="nav-mobile" class="center hide-on-med-and-down">
+            <li>
+                <a href="https://cdnjs.com/libraries/font-awesome" target="_blank" class="black-text">Kits</a>
+            </li>
+            <li>
+                <a href="https://fontawesome.com/icons" target="_blank" class="black-text">Icons</a>
+            </li>
+            <li>
+                <a href="https://docs.fontawesome.com/" target="_blank" class="black-text" >Docs</a>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+   </nav>
+
+<br>
+   <h3 class="red-text text-lighten-2">Active Items</h3>
+   <ul>Add active class to your li tags to denote the current page.
+   </p>
+   <nav class="yellow lighten-2">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="https://www.biblestudytools.com/bible-stories/crucifixion-of-jesus-bible-story.html" target="_blank">
+            <i class="fa-brands fa-square-instagram center brand-logo black-text"></i>
+    </a>
+       
+        <ul id="nav-mobile" class="center hide-on-med-and-down">
+            <li class="active">
+                <a href="https://cdnjs.com/libraries/font-awesome" target="_blank" class="black-text">Kits</a>
+            </li>
+            <li>
+                <a href="https://fontawesome.com/icons" target="_blank" class="black-text">Icons</a>
+            </li>
+            <li>
+                <a href="https://docs.fontawesome.com/" target="_blank" class="black-text">Docs</a>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+   </nav>
+
+   <h3 class="red-text text-lighten-2">Extended Navbar with Tabs</h3>
+   <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.
+
+   </p>
+   <!-- Navbar Extended -->
+   <nav class="blue lighten-2 nav-extended">
+        <div class="container">
+        <div class="nav-wrapper">
+            <a href="https://www.biblestudytools.com/bible-stories/crucifixion-of-jesus-bible-story.html" target="_blank">
+                <i class="fa-brands fa-square-x-twitter center brand-logo black-text"></i>
+        </a>
+        <a href="" class="sidenav-trigger" data-target="mobile-demo">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+       
+        <ul id="nav-mobile" class="center hide-on-med-and-down">
+            <li class="active">
+                <a href="https://cdnjs.com/libraries/font-awesome" target="_blank" class="black-text">Kits</a>
+            </li>
+            <li>
+                <a href="https://fontawesome.com/icons" target="_blank" class="black-text">Icons</a>
+            </li>
+            <li>
+                <a href="https://docs.fontawesome.com/" target="_blank" class="black-text">Docs</a>
+            </li>
+
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li class="tab">
+                    <a href="#test1"class="black-text">Test 1</a>
+                </li>
+                <li class="tab">
+                    <a href="#test2" class="black-text">Test 2</a>
+                </li>
+                <li class="tab">
+                    <a href="#test3" class="black-text">Test 3</a>
+                </li>
+            </ul>
+
+        </div>
+        </div>
+   </nav>
+
+   <!-- Sidenav Structure -->
+   <ul class="sidenav" id="mobile-demo">
+        <li class="active">
+            <a href="https://cdnjs.com/libraries/font-awesome" target="_blank" class="black-text">Kits</a>
+        </li>
+        <li>
+            <a href="https://fontawesome.com/icons" target="_blank" class="black-text">Icons</a>
+        </li>
+        <li>
+            <a href="https://docs.fontawesome.com/" target="_blank" class="black-text">Docs</a>
+        </li>
+   </ul>
+      
+   <!-- Tabs Structure -->
+   <div class="row">
+    <div class="col s12" id="test1">
+        <div class="card">
+            <div class="card-image">
+                <img src="images/God1.jpg" alt="" class="responsive-img">
+            </div>
+
+        </div>
+
+    </div>
+   </div>
+   <div class="row">
+    <div class="col s12" id="test2">
+        <div class="card">
+            <div class="card-image">
+                <img src="images/God2.jpg" alt="" class="responsive-img">
+            </div>
+
+        </div>
+
+    </div>
+   </div>
+   <div class="row">
+    <div class="col s12" id="test3">
+        <div class="card">
+            <div class="card-image">
+                <img src="images/God3.jpg" alt="" class="responsive-img">
+            </div>
+
+        </div>
+
+    </div>
+   </div>
+
+</div>
+   
+
+
+
+<div style="height: 1000px"></div>
+
+
+
+
+     <!-- jquery CDN -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        //Tabs Init
+            $('.tabs').tabs();
+            //Sidenav Init
+            $('.sidenav').sidenav({
+                edge: 'right',
+                inDuration: 1000,
+                outDuration: 1000
+            });
+
+            // Dropdown Init
+            $(".dropdown-trigger").dropdown();
+
+        });
+    </script>
+
+
+</body>
+</html>

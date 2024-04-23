@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Material Icon -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Font awesome -->
+     <script src="https://kit.fontawesome.com/3b049590d9.js" crossorigin="anonymous"></script>
+      <!-- font awesome cdnjs -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Custom CSS -->
+      <link rel="stylesheet" href="style.css">
+    
+      <title>Grid</title>
+</head>
+<body>
+    <h1 class="red-text center">Grid</h1>
+    <div class="divider"></div>
+    <br>
+<div class="container">
+     <div class="row">
+        <div class="col s12 m9">
+           
+            <p>
+                We are using a standard 12 column fluid responsive grid system. The grid helps you layout your page in an ordered, easy fashion.
+            </p>
+                <!-- Container -->
+            <div id="Container" class="section scrollspy">
+                <h3 class="red-text text-lighten-2">Container</h3>
+                <p>
+                    The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.
+                </p>
+            </div>
+
+            <h5><b>Demo</b></h5>
+            <p>Try the button below to see what the page looks like without containers.</p>  
+            <a href="" class="btn waves-effect waves-light">Turn Off Containers</a>
+            <br><br>
+            <img src="images/grid1.png" alt="" class="responsive-img">
+                <p>
+                To add a container just put your content inside a
+                    <code class="language-markup">
+                        <span class="token-tag">
+                            <span class="tonken punctuation"><</span>
+                        div
+                        </span>
+                        <span class="token punctuation">></span>
+                    </code> tag with a
+                    <code class="language-markup">container</code> "class. Here's an example of how your page might be set up.</p>
+           
+            <!-- Introduction -->
+            <div id="Introduction" class="section scrollspy">
+                <h3 class="red-text text-lighten-2">Introduction</h3>
+            </div>
+            <p>Take a look at this section to quickly understand how the grid works!
+            </p>
+            <h5><b>12 Columns</b></h5>
+            <p>Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width.
+            </p>
+
+            <div class="row">
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">1</span>
+                </div>
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">2</span>
+                </div>
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">3</span>
+                </div>
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">4</span>
+                </div>
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">5</span>
+                </div>
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">6</span>
+                </div>
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">7</span>
+                </div>
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">8</span>
+                </div>
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">9</span>
+                </div>
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">10</span>
+                </div>
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">11</span>
+                </div>
+                <div class="col s12 m3 l6 xl1 card-panel yellow lighten-2">
+                    <span class="flow-text">12</span>
+                </div>
+            </div>
+
+            <p>
+                To get a feel of how the grid is used in HTML, take a look at the code below which will produce a similar result to the one above.
+                <br><br>
+                Note: For now, just know that the s1 stands for small-1 which in plain English means "1 column on small screens".
+            </p>
+            <br><br>
+
+            <h5><b>Columns live inside Rows</b></h5>
+            <p> 
+                Remember when you are creating your layout that all columns must be contained inside a row and that you must add the col class to your inner divs to make them into columns
+            </p>
+            <div class="row">
+                <div class="col s12 card-panel deep-orange">
+                    <span class="flow-text white-text">This div is 12-columns wide on all screen sizes</span></div>
+            </div>
+            <div class="row">
+                <div class="col s6 card-panel deep-orange">
+                    <span class="flow-text white-text">6 columns (one half) </span></div>
+                <div class="col s6 card-panel deep-orange">
+                    <span class="flow-text white-text">6 columns (one half) </span></div>
+            </div>
+            <br><br>
+            <!-- Offset -->
+            <div id="Offsets" class="section-scrollspy">
+                <h3 class="red-text text-lighten-2">Offsets</h3>
+            </div>
+            <p>To offset, simply add offset-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to offset by.</p>
+            <div class="row">
+                <div class="col s12 card-panel teal">
+                    <span class="flow-text white-text">This div is 12-columns wide on all screen sizes</span>
+                </div>
+                <div class="col s6 card-panel teal offset-s6">
+                    <span class="flow-text white-text">6-columns (offset-by-6)
+                    </span>
+                </div>
+            </div>
+            <br><br>
+            <!-- Push and Pull -->
+            <div id="PushandPull" class="section-scrollspy">
+                <h3 class="red-text text-lighten-2">Push and Pull</h3>
+            </div>
+            <p>You can easily change the order of your columns with push and pull. Simply add push-s2 or pull-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to push or pull by.</p>
+            <div class="row">
+                <div class="col s7 card-panel cyan lighten-2 push-s5">
+                    <p>This div is 7-columns wide on pushed to the right by 5-columns.</p>
+                </div>
+                <div class="col s5 card-panel cyan lighten-2 pull-s7">
+                    <p>5-columns wide pulled to the left by 7-columns.</p>
+                </div>
+            </div>
+            <br><br>
+            <!-- Creating Layouts -->
+            <div id="CreatingLayout" class="section-scrollspy">
+                <h3 class="red-text text-lighten-2">Creating Layout</h3>
+            </div>
+            <p>Here we will show you how to create some commonly used layouts with our grid system. Hopefully these will get you more comfortable with laying out elements. To keep these demos simple, the ones here will not be responsive.
+            </p>
+            <div class="row">
+                <div class="col s6">
+                    <h5><b>Section</b></h5>
+                    <p>The section class is used for simple top and bottom padding. Just add the section class to your div's containing large blocks of content.
+                    </p>
+                </div>
+                <div class="col s6">
+                    <h5><b>Divider</b></h5>
+                    <p>Dividers are 1 pixel lines that help break up your content. Just add the divider to a div in between your content.
+                    </p>
+                </div>
+                <div class="col s12">
+                    <h5><b>Example Sections and Dividers</b></h5>
+                    <div class="divider"></div>
+                    <br>
+                    <div class="flow-text">Section 1</div>
+                    <p>Stuff</p>
+                    <br>
+                    <div class="divider"></div>
+                    <div class="flow-text">Section 2</div>
+                    <p>Stuff</p>
+                    <br>
+                    <div class="divider"></div>
+                    <div class="flow-text">Section 3</div>
+                    <p>Stuff</p>
+                    <br>
+                    <div class="divider"></div>
+                </div>
+            </div>
+            <br>
+            <h5><b>Example Promotion Table</b></h5>
+            <p>If we want 3 divs that are equal size, we define the divs with a width of 4-columns, as 4+4+4 nicely adds up to 12. Inside those divs, we can put our content. Take our front page content for example. We've modified it slightly for the sake of this example.
+            </p>
+            <br>
+            <div class="row">
+                <div class="col s4">
+                    <img src="images/yum1.jpg" alt="" class="responsive-img">
+                    <h5 class="center"><b>Speeds up development</b></h5>
+                    <p class="center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.
+                    </p>
+                </div>
+                <div class="col s4">
+                    <img src="images/yum2.jpeg" alt="" class="responsive-img">
+                    <h5 class="center"><b>User Experience Focused</b></h5>
+                    <p class="center">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.
+                    </p>
+                </div>
+                <div class="col s4">
+                    <img src="images/yum3.jpeg" alt="" class="responsive-img">
+                    <h5 class="center"><b>Easy to work with</b></h5>
+                    <p class="center">We have provided detailed documentation as well as specific code examples to help new users get started.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col s3 adobe-stock hide-on-small-only">
+            <img src="images/grid2.png" alt="" class="responsive-img stock-img">
+            <a href="" class="red-text text-lighten-1 stock-link">
+            <br>
+                Adobe Creative Cloud for Teams. Put creativity to work</a>
+            <br>
+            <span>
+                <a href="" class="red-text text-lighten-1 stock-link-small">ads via carbon</a>
+            </span>
+             <!-- Scrollspy -->
+            <ul class="section table-of-contents">
+                <li><a href="#Container">Container</a></li>
+                <li><a href="#Introduction">Introduction</a></li>
+                <li><a href="#Offsets">Offsets</a></li>
+                <li><a href="#PushandPull">Push and Pull</a></li>
+                <li><a href="#CreatingLayout">Creating Layouts</a></li>
+                <li><a href="">Responsive Layout</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div style="height: 1000px;"></div>
+
+
+        <!-- jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.scrollspy').scrollSpy();
+            })
+        </script>
+
+</body>
+</html>
